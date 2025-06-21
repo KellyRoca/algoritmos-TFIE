@@ -1,0 +1,17 @@
+name: visso-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.23.5
+  - pandas
+  - matplotlib
+  - openpyxl  # Para lectura de archivos Excel .xlsx
+  - pip
+  - xlsxwriter
+  - tk
+  - pip:
+      - prophet
+      - pmdarima==2.0.3
+      - fpdf  # <--- Añadido para exportar imágenes a PDF
